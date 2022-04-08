@@ -25,7 +25,10 @@ header {
   text-align: center;
   width: auto;
   padding: 50px 50px;
-  margin: auto;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:30px;
 }
 
 header > h1 {
@@ -41,11 +44,16 @@ header > p {
   font-size: 1.5em;
 }
 
-#botao {
+.botao {
   background-color:var(--cor17) !important;
-  color: var(--cor14);
-  border-color:var(--cor14);
-  margin-top: 100px; 
+  color: var(--cor14) !important;
+  border-color:var(--cor14) !important;
+  width:auto !important; 
+  justify-self: center;
+}
+
+.botao:hover{
+  background: linear-gradient( #FFB60d ,#e59317);
 }
 
 main {
@@ -100,29 +108,31 @@ main {
 }
 .icones{
   display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-top:40px;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 50px;
 }
-.cristian {
-  background-color: var(--cor01);
-  font-family: var(--fonte-principal);
-  color: var(--cor12);
-  margin-top: 40px;
-  margin-bottom: 15px;
-  border: medium solid var(--cor17);
+
+#botao-coluna{
+
+  margin-bottom:20px;
+  margin-top:0px;
 }
+
 
 .foto_cristian {
   background-color: var(--cor01);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items:center;
+  display:flex;
   font-family: var(--fonte-secundaria);
   color: var(--cor12);
+}
+#foto_cristian-texto{
+  display:grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  gap:20px;
   line-height: 2em;
-  line-break: auto;
+  max-width: 800px;
 }
 
 .cristian_foto img {
@@ -133,23 +143,23 @@ main {
   border-radius: 10px;
 }
 
-.aprendizado {
-  font-family: var(--fonte-secundaria);
-  font-size: 1.5em;
-  text-align: left;
-  margin-top: 60px;
-  margin-left: 80px;
-  margin-bottom: 40px;
-}
-
 .lista {
   font-family: var(--fonte-secundaria);
   line-height: 2em;
-  font-size: large;
+  font-size: 2rem;
   text-align: left;
-  margin-left: 70.5px;
-
+  display:grid;
+  grid-template-columns: 1fr;
+  justify-content:center;
+  padding:20px 0px 20px 0px;
 }
+
+#lista-op {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+
 
 .primeira_oferta {
   background-color: var(--cor12);
