@@ -20,7 +20,7 @@
 }
 
 header {
-  background-image: url("Imagens/grafico.jpg");
+  background-image: url("../imagens/grafico.jpg");
   background-size: 1500px;
   text-align: center;
   width: auto;
@@ -32,7 +32,7 @@ header {
 }
 
 header > h1 {
-  color: var(--cor12);
+  color: var(--cor11);
   font-family: var(--fonte-principal);
   font-size: 3em;
   margin-bottom: 20px;
